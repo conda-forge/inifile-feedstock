@@ -20,10 +20,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
@@ -31,7 +31,7 @@ test:
 
 about:
   home: https://github.com/mitsuhiko/python-inifile
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   summary: A small INI library for Python.
 
 extra:
