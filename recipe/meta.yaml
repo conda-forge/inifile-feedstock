@@ -1,7 +1,7 @@
 {% set name = "inifile" %}
-{% set version = "0.3" %}
+{% set version = "0.4.1" %}
 {% set hash_type = "sha256" %}
-{% set hash = "d0844a8db43f98ed514389b42b3e04243b5f694737feb24ce73906f6d928ed7d" %}
+{% set hash = "d9e5eb4708ebf13353c4cfce798ad47890a8bcc5fbae04630223d15d79f55e96" %}
 
 package:
   name: {{ name|lower }}
@@ -14,8 +14,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
@@ -38,3 +38,4 @@ extra:
   recipe-maintainers:
     - goanpeca
     - rlaverde
+    - cav71
