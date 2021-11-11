@@ -32,6 +32,7 @@ test:
 about:
   home: https://github.com/mitsuhiko/python-inifile
   license: BSD-3-Clause
+  license_file: LICENSE.txt
   summary: A small INI library for Python.
 
 extra:
